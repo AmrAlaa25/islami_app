@@ -79,7 +79,7 @@ void onTap(){
       if(counter>33){
         counter=0;
         index++;
-        if(index==SebhaDetails.azkar.length){
+        if(index==SebhaDetails.azkar.length-1){
           index=0;
         }
       }
