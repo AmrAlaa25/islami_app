@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:introduction_screen/introduction_screen.dart';
 import 'package:islami/core/utils/appRoutes.dart';
+import 'package:islami/core/utils/app_Assets.dart';
 import 'package:islami/core/utils/app_size.dart';
 
 import '../../core/utils/app_colors.dart';
@@ -10,8 +11,8 @@ class IntroScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    double width=AppSize.width(context);
-    double height=AppSize.height(context);
+    double width=AppSize.getHeight(context);
+    double height=AppSize.getHeight(context);
 
     return IntroductionScreen(
 isProgress: true,
@@ -26,9 +27,9 @@ isProgress: true,
             width: width,
             child: Column(
             children: [
-               Image.asset('assets/images/Group 31.png',height:height*0.16 ,width:width,fit:BoxFit.contain ,),
+               Image.asset(AppAssets.logo,height:height*0.16 ,width:width,fit:BoxFit.contain ,),
     SizedBox(height:height*0.05 ,),
-              Image.asset('assets/images/image1.png',height:height*0.38 ,width:width*0.86,fit:BoxFit.contain ,),
+              Image.asset(AppAssets.welcome,height:height*0.38 ,width:width*0.86,fit:BoxFit.contain ,),
                   SizedBox(height:height*0.11 ,),
                     Text('Welcome To Islmi App',style:TextStyle(
                      fontSize:24   ,
@@ -61,9 +62,9 @@ titleTextStyle: TextStyle(
             width: width,
             child: Column(
             children: [
-               Image.asset('assets/images/Group 31.png',height:height*0.18 ,width:width,fit:BoxFit.contain ,),
+               Image.asset(AppAssets.logo,height:height*0.18 ,width:width,fit:BoxFit.contain ,),
     SizedBox(height:height*0.04 ,),
-              Expanded(child: Image.asset('assets/images/kabba.png',width:width*0.86,fit:BoxFit.contain ,)),
+              Expanded(child: Image.asset(AppAssets.kabba,width:width*0.86,fit:BoxFit.contain ,)),
               SizedBox(height:height*0.04 ,),
 
                     Text('Welcome To Islmi ',style:TextStyle(
@@ -108,9 +109,9 @@ titleTextStyle: TextStyle(
             width: width,
             child: Column(
               children: [
-                Image.asset('assets/images/Group 31.png',height:height*0.18 ,width:width,fit:BoxFit.contain ,),
+                Image.asset(AppAssets.logo,height:height*0.18 ,width:width,fit:BoxFit.contain ,),
                 SizedBox(height:height*0.04 ,),
-                Expanded(child: Image.asset('assets/images/image2.png',width:width*0.86,fit:BoxFit.contain ,)),
+                Expanded(child: Image.asset(AppAssets.sura,width:width*0.86,fit:BoxFit.contain ,)),
                 SizedBox(height:height*0.04 ,),
 
                 Text('Reading the Quran ',style:TextStyle(
@@ -155,9 +156,9 @@ titleTextStyle: TextStyle(
             width: width,
             child: Column(
               children: [
-                Image.asset('assets/images/Group 31.png',height:height*0.18 ,width:width,fit:BoxFit.contain ,),
+                Image.asset(AppAssets.logo,height:height*0.18 ,width:width,fit:BoxFit.contain ,),
                 SizedBox(height:height*0.04 ,),
-                Expanded(child: Image.asset('assets/images/bearish.png',width:width*0.86,fit:BoxFit.contain ,)),
+                Expanded(child: Image.asset(AppAssets.bearish,width:width*0.86,fit:BoxFit.contain ,)),
                 SizedBox(height:height*0.03 ,),
 
                 Text('Bearish',style:TextStyle(
@@ -202,9 +203,9 @@ titleTextStyle: TextStyle(
             width: width,
             child: Column(
               children: [
-                Image.asset('assets/images/Group 31.png',height:height*0.18 ,width:width,fit:BoxFit.contain ,),
+                Image.asset(AppAssets.logo,height:height*0.18 ,width:width,fit:BoxFit.contain ,),
                 SizedBox(height:height*0.04 ,),
-                Expanded(child: Image.asset('assets/images/radio.png',width:width*0.86,fit:BoxFit.contain ,)),
+                Expanded(child: Image.asset(AppAssets.Radio,width:width*0.86,fit:BoxFit.contain ,)),
                 SizedBox(height:height*0.03 ,),
 
                 Text('Holy Quran Radio',style:TextStyle(
